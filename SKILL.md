@@ -1,10 +1,12 @@
 ---
 name: freqtrade-tools
-description: "Shell aliases and helper commands for Freqtrade (cryptocurrency trading bot) that speed up common tasks. Use when setting up Freqtrade shortcuts, downloading market data quickly, running backtests from the command line, or controlling the bot. Covers bash/zsh (Linux/macOS) and PowerShell/Command Prompt (Windows). Trigger phrases: freqtrade aliases, freqtrade shortcuts, ftdata, ftback, freqtrade commands, freqtrade windows."
+description: "Shell aliases and helper commands for Freqtrade (cryptocurrency trading bot) that speed up common tasks. Use when setting up Freqtrade shortcuts, downloading market data quickly, running backtests from the command line, or controlling the bot. ⚠️ Bot control commands (ftstart/ftstop/ftrestart) require confirmation when connected to live trading. Covers bash/zsh (Linux/macOS) and PowerShell/Command Prompt (Windows). Trigger phrases: freqtrade aliases, freqtrade shortcuts, ftdata, ftback, freqtrade commands, freqtrade windows."
 metadata: {"clawdbot":{"emoji":"⚡","requires":{"bins":["docker","docker-compose"]},"os":["linux","darwin","win32"]}}
 ---
 
 # Freqtrade Tools
+
+> ⚠️ **Live Trading Warning:** Before using `ftstart`, `ftstop`, or `ftrestart`, confirm whether Freqtrade is in dry-run or live-trading mode. These commands control real trading services. Verify your config before starting the bot.
 
 Shell aliases and helper commands for faster Freqtrade workflows across Linux, macOS, and Windows.
 
@@ -71,6 +73,14 @@ ftstatus   # Service status + recent logs
 ftlist     # View downloaded data inventory
 ftui       # Open UI (auto-detect browser)
 ```
+
+## Safety
+
+### Before Using Bot Control Commands
+
+- **Check trading mode:** Confirm `dry_run: true` in your config unless you intend live trading
+- **ftstart confirmation:** When `dry_run: false`, ask for explicit human confirmation before starting
+- **ftstop/ftrestart:** Always notify the human before stopping or restarting services
 
 ## References
 

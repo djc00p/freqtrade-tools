@@ -1,6 +1,6 @@
 # ⚡ Freqtrade Tools: Developer Productivity Suite
 
-[![ClawHub Skill](https://img.shields.io/badge/ClawHub-Skill-blue)](https://clawhub.ai/djc00p/freqtrade-tools) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-blue)](#) [![Freqtrade Crypto](https://img.shields.io/badge/Freqtrade-Crypto-green)](https://github.com/freqtrade/freqtrade)
+[![ClawHub Skill](https://img.shields.io/badge/ClawHub-Skill-blue)](https://clawhub.ai/djc00p/freqtrade-tools) [![Agent Skill](https://img.shields.io/badge/Agent-Skill-blue)](#) [![Freqtrade Crypto Trading](https://img.shields.io/badge/Freqtrade-Crypto_Trading-green)](https://github.com/freqtrade/freqtrade)
 
 **Streamline your Freqtrade (Crypto Trading Bot) workflow with high-velocity shell aliases and helper functions.**
 
